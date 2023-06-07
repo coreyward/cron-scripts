@@ -1,0 +1,15 @@
+{
+  "name": "cron-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Corey Ward <corey@hey.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "node-cron": "^3.0.2",
+    "node-html-parser": "^6.1.5",
+    "node-notifier": "^10.0.1",
+    "open": "^9.1.0",
+    "tiny-invariant": "^1.3.1"
+  }
+}
