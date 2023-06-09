@@ -31,3 +31,9 @@ export const run = async () => {
 
 // Every hour between 8am and 5pm
 export const schedule = "0 8-17 * * *"
+
+// Auto-run if invoked directly
+if (`file://${process.argv[1]}` === import.meta.url) {
+  console.log("Running directly invoked script…")
+  run()
+}
