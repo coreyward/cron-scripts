@@ -7,7 +7,9 @@ const files = await fs.readdir("./scripts")
 files
   .filter((file) => file.endsWith(".mjs"))
   .map(async (file) => {
-    const { run, schedule } = await import(`./scripts/${file}`)
+    const { run, schedule, enabled } = await import(`./scripts/${file}`)
+
+    if (enabled === false) return
 
     invariant(
       cron.validate(schedule),
