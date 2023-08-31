@@ -1,6 +1,7 @@
 import fs from "node:fs/promises"
 import cron from "node-cron"
 import invariant from "tiny-invariant"
+import nodeNotifier from "node-notifier"
 
 const files = await fs.readdir("./scripts")
 
@@ -20,3 +21,5 @@ files
 
     return cron.schedule(schedule, run)
   })
+
+nodeNotifier.notify("Running!")
