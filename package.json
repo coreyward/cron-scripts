@@ -5,6 +5,9 @@
   "author": "Corey Ward <corey@hey.com>",
   "license": "UNLICENSED",
   "private": true,
+  "scripts": {
+    "start": "node run.mjs"
+  },
   "dependencies": {
     "node-cron": "^3.0.2",
     "node-html-parser": "^6.1.5",
