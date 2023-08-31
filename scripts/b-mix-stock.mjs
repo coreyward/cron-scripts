@@ -2,6 +2,8 @@ import { parse } from "node-html-parser"
 import notifier from "node-notifier"
 import open from "open"
 
+export const enabled = false
+
 const url =
   "https://www.armadilloclay.com/store/p2858/Cone_5_B-Mix_with_Speckles_%28WC-408%29.html"
 // const url = "https://www.armadilloclay.com/store/p17/Laguna_B-Mix_Cone_5.html"
